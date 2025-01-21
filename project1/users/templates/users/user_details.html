@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+User Details
+{% endblock %}
+
+{% block content %}
+<h1>User Details</h1>
+{% if user %}
+    <p>ID: {{ user.id }}</p>
+    <p>Name: {{ user.name }}</p>
+{% else %}
+    <p>User not found.</p>
+{% endif %}
+{% endblock %}
